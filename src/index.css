@@ -4,11 +4,6 @@ body {
 		'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	width: 100%;
-	max-width: 1400px;
-	display: block;
-	margin: auto;
-	min-height: 100vh;
 	background: #191919;
 }
 
