@@ -8,7 +8,7 @@ const SizeBlock = styled.div`
 	padding: 0 150px;
 	display: flex;
 	align-items: center;
-	position: relative;
+	position: relative; // change to fixed
 	top: 0;
 	opacity: 1;
 	transition: 1s;
