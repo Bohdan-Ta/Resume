@@ -1,7 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
-import { Loader } from './components/Loader'
+// import { Loader } from './components/Loader'
 import { AppBar } from './components/AppBar'
 import { Home } from './components/Home'
+import { About } from './components/About'
 import { Section } from './components/Section'
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
 				<AppBar />
 				<Routes>
 					<Route path='/' element={<Home />}></Route>
-					<Route path='/about' element={<Loader />}></Route>
+					<Route path='/about' element={<About />}></Route>
 				</Routes>
 			</Section>
 		</>
