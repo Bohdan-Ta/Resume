@@ -12,11 +12,6 @@ const SizeBlock = styled.div`
 	top: 0;
 	opacity: 1;
 	transition: 1s;
-	&:active {
-		position: relative;
-		opacity: 1;
-		z-index: 8;
-	}
 
 	h1 {
 		color: #fff;
