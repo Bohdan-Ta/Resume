@@ -4,7 +4,7 @@ import { AppBar } from './components/AppBar'
 import { Home } from './components/Home'
 import { About } from './components/About'
 import { Section } from './components/Section'
-import { Contacts } from './components/Contacts'
+import { Contact } from './components/Contact'
 
 function App() {
 	return (
@@ -14,7 +14,7 @@ function App() {
 				<Routes>
 					<Route path='/' element={<Home />}></Route>
 					<Route path='/about' element={<About />}></Route>
-					<Route path='/contacts' element={<Contacts />}></Route>
+					<Route path='/contact' element={<Contact />}></Route>
 				</Routes>
 			</Section>
 		</>

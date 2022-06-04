@@ -15,6 +15,7 @@ const Header = styled.header`
 	background-color: #1a1a1a;
 
 	ul {
+		padding: 0;
 		list-style: none;
 		display: flex;
 	}
