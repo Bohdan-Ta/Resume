@@ -14,14 +14,8 @@ const FormStyled = styled.div`
 	grid-gap: 50px;
 `
 const FormWrap = styled.div`
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px;
-
-	input {
+	input,
+	textarea {
 		width: 100%;
 		height: 40px;
 		background: rgba(255, 255, 255, 0.2);
@@ -31,9 +25,16 @@ const FormWrap = styled.div`
 		text-transform: capitalize;
 		color: #fff;
 		padding: 5px 10px;
+
+		::placeholder {
+			color: #fff;
+		}
 	}
-	label {
-		color: #fff;
+
+	textarea {
+		height: 280px;
+		resize: none;
+		font-family: sans-serif;
 	}
 
 	button {
@@ -46,36 +47,44 @@ const FormWrap = styled.div`
 		border: none;
 		border-radius: 10px;
 		cursor: pointer;
+		transition: 0.25s;
+
+		&:hover {
+			color: black;
+			border: 1px solid #fff;
+		}
 	}
-	/* message {
-		height: 280px;
-		resize: none;
-		font-family: sans-serif;
-	} */
 `
+const ErrorMsg = styled.div`
+	position: relative;
+	top: -20px;
+	right: -10px;
+	font-size: 14px;
+	color: red;
+	z-index: 10;
+`
+
 const Map = styled.div`
-	width: 100%;
-	height: 100%;
+	width: 600px;
+	height: 80%;
 	padding: 10px;
 	border: 2px solid #fff;
 	background: rgba(255, 255, 255, 0.2);
 	border-radius: 10px;
-
-	iframe {
-		width: 100%;
-		height: 100%;
-		border-radius: 5px;
-	}
 `
-
+const Iframe = styled.iframe`
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+`
 export const Contact = () => {
 	return (
 		<FormStyled>
 			<Formik
-				initialValues={{ firstName: '', email: '', message: '' }}
+				initialValues={{ name: '', email: '', message: '' }}
 				validationSchema={Yup.object({
-					firstName: Yup.string().max(15, 'Must be 15 characters or less').required(),
-					email: Yup.string().email('Invalid email address').required(),
+					name: Yup.string().max(15, 'Must be 15 characters or less').required('Required'),
+					email: Yup.string().email('Invalid email address').required('Required'),
 				})}
 				onSubmit={(values, { setSubmitting }) => {
 					setTimeout(() => {
@@ -86,23 +95,25 @@ export const Contact = () => {
 			>
 				<FormWrap>
 					<Form>
-						<label htmlFor='firstName'>Name</label>
-						<Field name='firstName' type='text' />
-						<ErrorMessage name='firstName' />
+						<Field name='name' type='text' placeholder='Name' />
+						<ErrorMsg>
+							<ErrorMessage name='name' />
+						</ErrorMsg>
+						<Field name='email' type='email' placeholder='email' />
+						<ErrorMsg>
+							<ErrorMessage name='email' />
+						</ErrorMsg>
+						<Field name='message' as='textarea' placeholder='message' />
 
-						<label htmlFor='email'>Email Address</label>
-						<Field name='email' type='email' />
-						<ErrorMessage name='email' />
-
-						<label htmlFor='message'>Message</label>
-						<Field name='message' as='textarea' />
-
-						<button type='submit'>Contacts</button>
+						<button type='submit'>Contact</button>
 					</Form>
 				</FormWrap>
 			</Formik>
 			<Map>
-				<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325515.68161572196!2d30.25251015734255!3d50.402136755748614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1643055222962!5m2!1suk!2sua'></iframe>
+				<Iframe
+					src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325515.68161572196!2d30.25251015734255!3d50.402136755748614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1643055222962!5m2!1suk!2sua'
+					loading='lazy'
+				></Iframe>
 			</Map>
 		</FormStyled>
 	)
