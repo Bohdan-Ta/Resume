@@ -1,9 +1,9 @@
 import React from 'react'
-// import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import styled from 'styled-components'
 
-const Header = styled.header`
+const Header = styled.div`
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -14,26 +14,29 @@ const Header = styled.header`
 	z-index: 10;
 	background-color: #1a1a1a;
 
-	ul {
-		padding: 0;
-		list-style: none;
-		display: flex;
-	}
-
 	a {
 		color: #fff;
-		opacity: 0.5;
 		text-decoration: none;
 		text-transform: capitalize;
 		padding: 10px 30px;
 		margin: 0 20px;
-		line-height: 80px;
+		line-height: 60px;
 		transition: 0.5s;
 		font-style: 20px;
 		cursor: pointer;
-		&:hover,
-		&:active {
-			opacity: 1;
+
+		&::after {
+			content: '';
+			display: block;
+			position: relative;
+			width: 0%;
+			margin: 0 auto;
+			border-bottom: 3px solid white;
+			bottom: 0.15em;
+			transition: all 0.5s;
+		}
+		&:hover::after {
+			width: 100%;
 		}
 	}
 `
@@ -41,22 +44,38 @@ const Header = styled.header`
 export const AppBar = () => {
 	return (
 		<Header>
-			<header>
-				<ul>
-					<li>
-						<a href='/'>Home</a>
-					</li>
-					<li>
-						<a href='/project'>Project</a>
-					</li>
-					<li>
-						<a href='/about'>About</a>
-					</li>
-					<li>
-						<a href='/contact'>Contact</a>
-					</li>
-				</ul>
-			</header>
+			<NavLink
+				to='/'
+				style={({ isActive }) => ({
+					opacity: isActive ? '1' : '0.5',
+				})}
+			>
+				Home
+			</NavLink>
+			<NavLink
+				to='/project'
+				style={({ isActive }) => ({
+					opacity: isActive ? '1' : '0.5',
+				})}
+			>
+				Project
+			</NavLink>
+			<NavLink
+				to='/about'
+				style={({ isActive }) => ({
+					opacity: isActive ? '1' : '0.5',
+				})}
+			>
+				About
+			</NavLink>
+			<NavLink
+				to='/contact'
+				style={({ isActive }) => ({
+					opacity: isActive ? '1' : '0.5',
+				})}
+			>
+				Contact
+			</NavLink>
 		</Header>
 	)
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import my_photo from '../../images/photo_my.png'
 
 const SizeBlock = styled.div`
@@ -8,10 +9,8 @@ const SizeBlock = styled.div`
 	padding: 0 150px;
 	display: flex;
 	align-items: center;
-	position: relative; // change to fixed
+	position: relative;
 	top: 0;
-	opacity: 1;
-	transition: 1s;
 
 	h1 {
 		color: #fff;

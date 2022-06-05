@@ -5,8 +5,6 @@ import styled from 'styled-components'
 const FormStyled = styled.div`
 	position: absolute;
 	top: 50px;
-	opacity: 1;
-	transition: 1s;
 	padding: 100px 150px;
 	height: 100vh;
 	display: grid;
