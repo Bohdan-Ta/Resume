@@ -1,6 +1,11 @@
+// import { NavLink, Route, Outlet } from 'react-router-dom'
+// import { Suspense } from 'react'
+
+// import { Loader } from '../../components/Loader'
 import styled from 'styled-components'
 
 import { Skills } from './Skills'
+import { Education } from './Education'
 
 import my_photo from '../../images/photo_my.png'
 
@@ -72,6 +77,7 @@ export const About = () => {
 				</p>
 			</AboutDiv>
 			<Skills />
+			<Education />
 		</>
 	)
 }
