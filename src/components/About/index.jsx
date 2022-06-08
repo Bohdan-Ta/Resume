@@ -5,7 +5,7 @@
 import styled from 'styled-components'
 
 import { Skills } from './Skills'
-import { Education } from './Education'
+import { Education } from './Education/Education'
 
 import my_photo from '../../images/photo_my.png'
 
