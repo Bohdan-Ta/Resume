@@ -6,11 +6,8 @@ import projectThird from '../../images/project-3.jpg'
 import projectFourth from '../../images/project-4.jpg'
 
 const ProjectContainer = styled.div`
-	width: 100%;
 	min-height: 100vh;
 	padding: 150px 100px 100px;
-	position: relative;
-	top: 0;
 
 	h1 {
 		font-size: 100px;
@@ -86,6 +83,10 @@ const BtnGit = styled.button`
 	background: #000;
 	color: #fff;
 	cursor: pointer;
+	&:hover {
+		background: #fff;
+		color: #000;
+	}
 `
 const BtnLive = styled.button`
 	height: 40px;
@@ -96,6 +97,9 @@ const BtnLive = styled.button`
 	border: 2px solid #fff;
 	color: #fff;
 	cursor: pointer;
+	&:hover {
+		border-color: #000;
+	}
 `
 
 export const Project = () => {
