@@ -6,6 +6,7 @@ import { Home } from './components/Home'
 import { About } from './components/About'
 import { Section } from './components/Section'
 import { Contact } from './components/Contact'
+import { Project } from './components/Project'
 
 // const AppBar = lazy(() => import('./components/AppBar'))
 // const Home = lazy(() => import('./components/Home'))
@@ -22,6 +23,7 @@ export const App = () => {
 					<Route path='/' element={<Home />}></Route>
 					<Route path='/about' element={<About />}></Route>
 					<Route path='/contact' element={<Contact />}></Route>
+					<Route path='/project' element={<Project />}></Route>
 				</Routes>
 			</Suspense>
 		</Section>
