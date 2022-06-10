@@ -110,56 +110,84 @@ export const Project = () => {
 				<Card>
 					<img src={projectOne} alt='abstraction' />
 					<Content>
-						<h2>project 1</h2>
+						<h2>hellen-english</h2>
 						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae
-							aliquam optio accusamus natus nobis! Nam, sunt?
+							Team project in GoIT. A project to create a site for learning English. The project uses: mobile layout,
+							tablet and PC.
 						</p>
 						<ButtonGroup>
-							<BtnGit type='button'>github repo</BtnGit>
-							<BtnLive type='button'>see live</BtnLive>
+							<BtnGit
+								type='button'
+								onClick={() => window.open('https://github.com/Viktor-Kostiuchenko/hellen-english', '_blank')}
+							>
+								github repo
+							</BtnGit>
+							<BtnLive
+								type='button'
+								onClick={() => window.open('https://viktor-kostiuchenko.github.io/hellen-english/', '_blank')}
+							>
+								see live
+							</BtnLive>
 						</ButtonGroup>
 					</Content>
 				</Card>
 				<Card>
 					<img src={projectSecond} alt='abstraction' />
 					<Content>
-						<h2>project 2</h2>
+						<h2>Filmoteka</h2>
 						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae
-							aliquam optio accusamus natus nobis! Nam, sunt?
+							Team project in GoIT. A project to create a site for selecting and watching rating movies. The project
+							uses: Java Scrypt, Axios, Git, Sass
 						</p>
 						<ButtonGroup>
-							<BtnGit type='button'>github repo</BtnGit>
-							<BtnLive type='button'>see live</BtnLive>
+							<BtnGit type='button' onClick={() => window.open('https://github.com/A-V-Kuzmich/filmoteka', '_blank')}>
+								github repo
+							</BtnGit>
+							<BtnLive
+								type='button'
+								onClick={() => window.open('  https://a-v-kuzmich.github.io/filmoteka/ ', '_blank')}
+							>
+								see live
+							</BtnLive>
 						</ButtonGroup>
 					</Content>
 				</Card>
 				<Card>
 					<img src={projectThird} alt='abstraction' />
 					<Content>
-						<h2>project 3</h2>
+						<h2>Phonebook</h2>
 						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae
-							aliquam optio accusamus natus nobis! Nam, sunt?
+							Phonebook that allows you to save contacts and sort them alphabetically. React, Route, Redax, Formik,
+							Netlyfi and other technologies are used
 						</p>
 						<ButtonGroup>
-							<BtnGit type='button'>github repo</BtnGit>
-							<BtnLive type='button'>see live</BtnLive>
+							<BtnGit
+								type='button'
+								onClick={() => window.open('  https://github.com/Bohdan-Ta/goit-react-hw-08-phonebook ', '_blank')}
+							>
+								github repo
+							</BtnGit>
+							<BtnLive type='button' onClick={() => window.open('  https://phonebook-tb.netlify.app ', '_blank')}>
+								see live
+							</BtnLive>
 						</ButtonGroup>
 					</Content>
 				</Card>
 				<Card>
 					<img src={projectFourth} alt='abstraction' />
 					<Content>
-						<h2>project 4</h2>
+						<h2>Wallet</h2>
 						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae
-							aliquam optio accusamus natus nobis! Nam, sunt?
+							Wallet. Team project using React, Node.js, Axios, Route technologies. This application allows you to
+							manage your finances.
 						</p>
 						<ButtonGroup>
-							<BtnGit type='button'>github repo</BtnGit>
-							<BtnLive type='button'>see live</BtnLive>
+							<BtnGit type='button' onClick={() => window.open('  https://github.com/VladVinichenko/Wallet', '_blank')}>
+								github repo
+							</BtnGit>
+							<BtnLive type='button' onClick={() => window.open('  https://wallet-web-goit.herokuapp.com/ ', '_blank')}>
+								see live
+							</BtnLive>
 						</ButtonGroup>
 					</Content>
 				</Card>
