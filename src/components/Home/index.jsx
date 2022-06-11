@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import my_photo from '../../images/photo_my.png'
+import my_photo from '../../images/photo_my.jpg'
 
 const SizeBlock = styled.div`
 	max-width: 1400px;
@@ -29,7 +29,7 @@ const SizeBlock = styled.div`
 	}
 `
 
-export const Home = () => {
+export default function Home() {
 	return (
 		<SizeBlock>
 			<div>

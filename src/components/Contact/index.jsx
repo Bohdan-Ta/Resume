@@ -75,7 +75,7 @@ const Iframe = styled.iframe`
 	height: 100%;
 	border-radius: 5px;
 `
-export const Contact = () => {
+export default function Contact() {
 	return (
 		<FormStyled>
 			<Formik

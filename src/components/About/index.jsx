@@ -7,7 +7,7 @@ import styled from 'styled-components'
 import { Skills } from './Skills'
 import { Education } from './Education/Education'
 
-import my_photo from '../../images/photo_my.png'
+import my_photo from '../../images/photo_my.jpg'
 
 const AboutDiv = styled.div`
 	/* width: 100%; */
@@ -57,7 +57,7 @@ const Button = styled.button`
 	}
 `
 
-export const About = () => {
+export default function About() {
 	return (
 		<>
 			<AboutDiv>

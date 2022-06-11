@@ -41,7 +41,7 @@ const Header = styled.div`
 	}
 `
 
-export const AppBar = () => {
+export default function AppBar() {
 	return (
 		<Header>
 			<NavLink

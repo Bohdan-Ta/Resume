@@ -102,7 +102,7 @@ const BtnLive = styled.button`
 	}
 `
 
-export const Project = () => {
+export default function Project() {
 	return (
 		<ProjectContainer>
 			<h1>some of my projects</h1>

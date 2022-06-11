@@ -8,7 +8,7 @@ const SectionSize = styled.section`
 	font-family: sans-serif;
 `
 
-export const Section = ({ children }) => {
+export default function Section({ children }) {
 	return (
 		<SectionSize>
 			<section>{children}</section>
