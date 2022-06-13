@@ -1,4 +1,5 @@
 import { Formik, Field, ErrorMessage, Form } from 'formik'
+import emailjs from 'emailjs-com'
 import * as Yup from 'yup'
 import styled from 'styled-components'
 
@@ -20,7 +21,7 @@ const FormWrap = styled.div`
 		border: 1px solid #fff;
 		margin-bottom: 30px;
 		border-radius: 5px;
-		text-transform: capitalize;
+		/* text-transform: capitalize; */
 		color: #fff;
 		padding: 5px 10px;
 
@@ -76,6 +77,16 @@ const Iframe = styled.iframe`
 	border-radius: 5px;
 `
 export default function Contact() {
+	function sendEmail(object) {
+		emailjs.send('service_qp0brcc', 'template_hr6h8b8', object, '1moAFjH5T5FKh5xhk').then(
+			(result) => {
+				console.log(result.text)
+			},
+			(error) => {
+				console.log(error.text)
+			}
+		)
+	}
 	return (
 		<FormStyled>
 			<Formik
@@ -84,10 +95,12 @@ export default function Contact() {
 					name: Yup.string().max(15, 'Must be 15 characters or less').required('Required'),
 					email: Yup.string().email('Invalid email address').required('Required'),
 				})}
-				onSubmit={(values, { setSubmitting }) => {
+				onSubmit={(values, { setSubmitting, resetForm }) => {
 					setTimeout(() => {
+						sendEmail(values)
 						alert(JSON.stringify(values, null, 2))
 						setSubmitting(false)
+						resetForm()
 					}, 400)
 				}}
 			>
@@ -97,13 +110,13 @@ export default function Contact() {
 						<ErrorMsg>
 							<ErrorMessage name='name' />
 						</ErrorMsg>
-						<Field name='email' type='email' placeholder='email' />
+						<Field name='email' type='email' placeholder='Email' />
 						<ErrorMsg>
 							<ErrorMessage name='email' />
 						</ErrorMsg>
-						<Field name='message' as='textarea' placeholder='message' />
+						<Field name='message' as='textarea' placeholder='Message' />
 
-						<button type='submit'>Contact</button>
+						<button type='submit'>Send contact</button>
 					</Form>
 				</FormWrap>
 			</Formik>
