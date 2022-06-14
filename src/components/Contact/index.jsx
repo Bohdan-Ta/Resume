@@ -1,6 +1,7 @@
 import { Formik, Field, ErrorMessage, Form } from 'formik'
 import emailjs from 'emailjs-com'
 import * as Yup from 'yup'
+import { toast } from 'react-toastify'
 import styled from 'styled-components'
 
 const FormStyled = styled.div`
@@ -78,11 +79,16 @@ const Iframe = styled.iframe`
 `
 export default function Contact() {
 	function sendEmail(object) {
+		const success = () => toast.success('Information sent successfully')
+		const errors = () => toast.error('Something went wrong')
+
 		emailjs.send('service_qp0brcc', 'template_hr6h8b8', object, '1moAFjH5T5FKh5xhk').then(
 			(result) => {
+				success()
 				console.log(result.text)
 			},
 			(error) => {
+				errors()
 				console.log(error.text)
 			}
 		)
@@ -98,7 +104,7 @@ export default function Contact() {
 				onSubmit={(values, { setSubmitting, resetForm }) => {
 					setTimeout(() => {
 						sendEmail(values)
-						alert(JSON.stringify(values, null, 2))
+						// alert(JSON.stringify(values, null, 2))
 						setSubmitting(false)
 						resetForm()
 					}, 400)
