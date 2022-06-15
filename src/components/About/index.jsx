@@ -59,6 +59,7 @@ const Button = styled.button`
 `
 
 export default function About() {
+	const download = () => {}
 	return (
 		<motion.div
 			intial={{ width: 0 }}
@@ -68,7 +69,9 @@ export default function About() {
 			<AboutDiv>
 				<AboutWrap>
 					<img src={my_photo} alt='man' />
-					<Button>downlaod cv</Button>
+					<Button type='button' onClick={download}>
+						downlaod cv
+					</Button>
 				</AboutWrap>
 				<p>
 					Where can I get some? There are many variations of passages of Lorem Ipsum available, but the majority have
