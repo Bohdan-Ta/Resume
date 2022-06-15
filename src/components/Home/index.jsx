@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { motion } from 'framer-motion'
+
 import my_photo from '../../images/photo_my.jpg'
 
 const SizeBlock = styled.div`
@@ -31,14 +33,20 @@ const SizeBlock = styled.div`
 
 export default function Home() {
 	return (
-		<SizeBlock>
-			<div>
-				<h1>
-					hello, i am <br />
-					bohdan
-				</h1>
-				<img src={my_photo} alt='man' />
-			</div>
-		</SizeBlock>
+		<motion.div
+			intial={{ width: 0 }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+		>
+			<SizeBlock>
+				<div>
+					<h1>
+						hello, i am <br />
+						bohdan
+					</h1>
+					<img src={my_photo} alt='man' />
+				</div>
+			</SizeBlock>
+		</motion.div>
 	)
 }

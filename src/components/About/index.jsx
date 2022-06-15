@@ -3,6 +3,7 @@
 
 // import { Loader } from '../../components/Loader'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 import { Skills } from './Skills'
 import { Education } from './Education/Education'
@@ -59,7 +60,11 @@ const Button = styled.button`
 
 export default function About() {
 	return (
-		<>
+		<motion.div
+			intial={{ width: 0 }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+		>
 			<AboutDiv>
 				<AboutWrap>
 					<img src={my_photo} alt='man' />
@@ -78,6 +83,6 @@ export default function About() {
 			</AboutDiv>
 			<Skills />
 			<Education />
-		</>
+		</motion.div>
 	)
 }

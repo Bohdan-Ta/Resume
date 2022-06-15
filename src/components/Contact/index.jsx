@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com'
 import * as Yup from 'yup'
 import { toast } from 'react-toastify'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 const FormStyled = styled.div`
 	position: absolute;
@@ -94,44 +95,50 @@ export default function Contact() {
 		)
 	}
 	return (
-		<FormStyled>
-			<Formik
-				initialValues={{ name: '', email: '', message: '' }}
-				validationSchema={Yup.object({
-					name: Yup.string().max(15, 'Must be 15 characters or less').required('Required'),
-					email: Yup.string().email('Invalid email address').required('Required'),
-				})}
-				onSubmit={(values, { setSubmitting, resetForm }) => {
-					setTimeout(() => {
-						sendEmail(values)
-						// alert(JSON.stringify(values, null, 2))
-						setSubmitting(false)
-						resetForm()
-					}, 400)
-				}}
-			>
-				<FormWrap>
-					<Form>
-						<Field name='name' type='text' placeholder='Name' />
-						<ErrorMsg>
-							<ErrorMessage name='name' />
-						</ErrorMsg>
-						<Field name='email' type='email' placeholder='Email' />
-						<ErrorMsg>
-							<ErrorMessage name='email' />
-						</ErrorMsg>
-						<Field name='message' as='textarea' placeholder='Message' />
+		<motion.div
+			intial={{ width: 0 }}
+			animate={{ width: '100%' }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+		>
+			<FormStyled>
+				<Formik
+					initialValues={{ name: '', email: '', message: '' }}
+					validationSchema={Yup.object({
+						name: Yup.string().max(15, 'Must be 15 characters or less').required('Required'),
+						email: Yup.string().email('Invalid email address').required('Required'),
+					})}
+					onSubmit={(values, { setSubmitting, resetForm }) => {
+						setTimeout(() => {
+							sendEmail(values)
+							// alert(JSON.stringify(values, null, 2))
+							setSubmitting(false)
+							resetForm()
+						}, 400)
+					}}
+				>
+					<FormWrap>
+						<Form>
+							<Field name='name' type='text' placeholder='Name' />
+							<ErrorMsg>
+								<ErrorMessage name='name' />
+							</ErrorMsg>
+							<Field name='email' type='email' placeholder='Email' />
+							<ErrorMsg>
+								<ErrorMessage name='email' />
+							</ErrorMsg>
+							<Field name='message' as='textarea' placeholder='Message' />
 
-						<button type='submit'>Send contact</button>
-					</Form>
-				</FormWrap>
-			</Formik>
-			<Map>
-				<Iframe
-					src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325515.68161572196!2d30.25251015734255!3d50.402136755748614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1643055222962!5m2!1suk!2sua'
-					loading='lazy'
-				></Iframe>
-			</Map>
-		</FormStyled>
+							<button type='submit'>Send contact</button>
+						</Form>
+					</FormWrap>
+				</Formik>
+				<Map>
+					<Iframe
+						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325515.68161572196!2d30.25251015734255!3d50.402136755748614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1643055222962!5m2!1suk!2sua'
+						loading='lazy'
+					></Iframe>
+				</Map>
+			</FormStyled>
+		</motion.div>
 	)
 }
