@@ -60,10 +60,23 @@ const FormWrap = styled.div`
 	}
 `
 const StyleIcon = styled.div`
-	position: absolute;
-	top: 50px;
-	left: 50%;
-	transform: translateX(-50%);
+	position: fixed;
+	top: 80%;
+	left: 50px;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+
+	svg {
+		width: 30px;
+		height: 30px;
+		margin-bottom: 30px;
+		color: #fff;
+
+		&:hover {
+			color: #ff4f4f;
+		}
+	}
 `
 const ErrorMsg = styled.div`
 	position: relative;
@@ -142,7 +155,7 @@ export default function Contact() {
 					</FormWrap>
 				</Formik>
 				<StyleIcon>
-					<a href='https://web.telegram.org/k/'>
+					<a href='https://t.me/lifehackerru/18056' target='_blank' rel='noreferrer'>
 						<BsTelegram />
 					</a>
 					<BsLinkedin />
