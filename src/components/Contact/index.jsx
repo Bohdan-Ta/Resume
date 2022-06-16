@@ -3,6 +3,9 @@ import emailjs from 'emailjs-com'
 import * as Yup from 'yup'
 import { toast } from 'react-toastify'
 import styled from 'styled-components'
+
+import { BsTelegram, BsLinkedin, BsFacebook } from 'react-icons/bs'
+
 import { motion } from 'framer-motion'
 
 const FormStyled = styled.div`
@@ -55,6 +58,12 @@ const FormWrap = styled.div`
 			border: 1px solid #fff;
 		}
 	}
+`
+const StyleIcon = styled.div`
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
 `
 const ErrorMsg = styled.div`
 	position: relative;
@@ -132,6 +141,13 @@ export default function Contact() {
 						</Form>
 					</FormWrap>
 				</Formik>
+				<StyleIcon>
+					<a href='https://web.telegram.org/k/'>
+						<BsTelegram />
+					</a>
+					<BsLinkedin />
+					<BsFacebook />
+				</StyleIcon>
 				<Map>
 					<Iframe
 						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325515.68161572196!2d30.25251015734255!3d50.402136755748614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1643055222962!5m2!1suk!2sua'
