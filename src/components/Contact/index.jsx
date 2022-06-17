@@ -158,8 +158,16 @@ export default function Contact() {
 					<a href='https://t.me/lifehackerru/18056' target='_blank' rel='noreferrer'>
 						<BsTelegram />
 					</a>
-					<BsLinkedin />
-					<BsFacebook />
+					<a
+						href='https://www.linkedin.com/in/%D0%B1%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD-%D1%82%D0%B0%D1%82%D0%B0%D1%80%D1%87%D1%83%D0%BA-4961907a/'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<BsLinkedin />
+					</a>
+					<a href='https://ru-ru.facebook.com/lifehacker.ru/' target='_blank' rel='noreferrer'>
+						<BsFacebook />
+					</a>
 				</StyleIcon>
 				<Map>
 					<Iframe
