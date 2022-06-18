@@ -8,7 +8,7 @@ import projectFourth from '../../images/project-4.jpg'
 
 const ProjectContainer = styled.div`
 	min-height: 100vh;
-	padding: 150px 100px 100px;
+	padding: 30px 100px 100px;
 
 	h1 {
 		font-size: 100px;
