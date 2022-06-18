@@ -26,7 +26,7 @@ const Skill = styled.div`
 
 	img {
 		display: block;
-		margin: auto;
+		margin: 30px 0 20px;
 		height: 200px;
 	}
 
@@ -93,6 +93,13 @@ const Skill = styled.div`
 			color: #4fdfff;
 		}
 	}
+	&:nth-child(6) {
+		div {
+			background: #6370e428;
+			border-color: #d9e8eb;
+			color: #4fdfff;
+		}
+	}
 `
 
 export const Skills = () => {
@@ -102,33 +109,51 @@ export const Skills = () => {
 			<Container>
 				<Skill>
 					<img src='#' alt='' />
-					<div>98%</div>
-					<h2>HTML</h2>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+					<div>HTML</div>
+					{/* <h2>HTML</h2> */}
+					<p>Confidence in possession. Using semantics when designing sites.</p>
 				</Skill>
 				<Skill>
 					<img src='#' alt='' />
-					<div>98%</div>
-					<h2>CSS</h2>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+					<div>CSS</div>
+					{/* <h2>CSS</h2> */}
+					<p>Confident possession. When creating sites I use both css and sass, styled-component, inline Styles</p>
 				</Skill>
 				<Skill>
 					<img src='#' alt='' />
-					<div>98%</div>
-					<h2>JS</h2>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+					<div>JS</div>
+					{/* <h2>JS</h2> */}
+					<p>
+						I have knowledge of JS at a level that allows you to build sites with interactive elements. Use asynchronous
+						queries. When writing code, you can use classes, hooks, classic or arrow functions, and other JS
+						capabilities.
+					</p>
 				</Skill>
 				<Skill>
 					<img src='#' alt='' />
-					<div>98%</div>
-					<h2>NODE.JS</h2>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+					<div>NODE.JS</div>
+					{/* <h2>NODE.JS</h2> */}
+					<p>I have the knowledge to use Node.js to create back-end sites and applications</p>
 				</Skill>
 				<Skill>
 					<img src='#' alt='' />
-					<div>98%</div>
-					<h2>REACT</h2>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+					<div>REACT</div>
+					{/* <h2>REACT</h2> */}
+					<p>
+						React is what allows me to create what the customer wants or wants. Using React with all libraries and
+						frameworks you can create an amazing product. When writing code, I use both classes and hooks. Redux is a
+						great way to monitor the status of the application.
+					</p>
+				</Skill>
+				<Skill>
+					<img src='#' alt='' />
+					<div>GIT</div>
+					{/* <h2>REACT</h2> */}
+					<p>
+						Git is something incredible that allows the whole team to work on a project at once. Experience of team work
+						on the project, the ability to create projects, configure the project for team work, resolve conflicts in
+						the implementation of commits
+					</p>
 				</Skill>
 			</Container>
 		</Section>

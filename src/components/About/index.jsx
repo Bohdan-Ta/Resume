@@ -74,14 +74,14 @@ export default function About() {
 					</Button>
 				</AboutWrap>
 				<p>
-					Where can I get some? There are many variations of passages of Lorem Ipsum available, but the majority have
-					suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
-					believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-					embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
-					predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of
-					over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
-					looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
-					non-characteristic words etc.
+					PROACTIVE - HIGH ORGANIZATION - ATTENTIVENESS <br></br> I have experience in team management, I know how to
+					work in a team to achieve results. I am constantly striving to gain additional knowledge and improve my skills
+					both in management experience and in the field of IT. Gained experience in three team projects while training
+					Full Stack Developer at GoIT, which lasted from 2021-2022. Gained knowledge of HTML, CSS, React, JS, Node.js
+					and other frameworks that allow you to create sites and other software products. I have been working on
+					learning English for the last 2 years. I read and implement modern developments in IT, in particular I use
+					foreign youtube channels, electronic media resources in particular Medium in the direction of JS, React,
+					Node.JS, Git etc.
 				</p>
 			</AboutDiv>
 			<Skills />
