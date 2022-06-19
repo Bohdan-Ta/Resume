@@ -25,7 +25,7 @@ const ProjectContainer = styled.div`
 const ProjectBlock = styled.div`
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 100px;
+	grid-gap: 50px;
 `
 
 const Card = styled.div`
@@ -34,7 +34,7 @@ const Card = styled.div`
 
 	img {
 		width: 100%;
-		height: 100%;
+		/* height: 100%; */
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -73,7 +73,7 @@ const Content = styled.div`
 const ButtonGroup = styled.div`
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 20px;
+	gap: 20px 5px;
 `
 
 const BtnGit = styled.button`

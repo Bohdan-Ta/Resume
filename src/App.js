@@ -15,12 +15,6 @@ export const App = () => {
 				<AppBar />
 				<Suspense fallback={<Loader />}>
 					<AnimatedRoutes />
-					{/* <Routes>
-						<Route path='/' element={<Home />}></Route>
-						<Route path='/about' element={<About />}></Route>
-						<Route path='/contact' element={<Contact />}></Route>
-						<Route path='/project' element={<Project />}></Route>
-					</Routes> */}
 				</Suspense>
 			</Section>
 			<ToastContainer />

@@ -155,7 +155,7 @@ export default function Contact() {
 					</FormWrap>
 				</Formik>
 				<StyleIcon>
-					<a href='https://t.me/lifehackerru/18056' target='_blank' rel='noreferrer'>
+					<a href='https://t.me/@tbukraine' target='_blank' rel='noreferrer'>
 						<BsTelegram />
 					</a>
 					<a
