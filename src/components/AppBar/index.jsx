@@ -18,8 +18,8 @@ const Header = styled.div`
 		color: #fff;
 		text-decoration: none;
 		text-transform: capitalize;
-		padding: 10px 30px;
-		margin: 0 20px;
+		padding: 10px;
+		margin: 0 5px;
 		line-height: 60px;
 		transition: 0.5s;
 		font-style: 20px;
@@ -37,6 +37,11 @@ const Header = styled.div`
 		}
 		&:hover::after {
 			width: 100%;
+		}
+
+		@media (min-width: 768px) {
+			padding: 10px 30px;
+			margin: 0 20px;
 		}
 	}
 `
