@@ -61,8 +61,10 @@ const Button = styled.button`
 
 export default function About() {
 	const download = () => {
-		FileSaver.saveAs(process.env.REACT_APP_CLIENT_URL + 'public/resources/i.pdf', 'MyCV.pdf')
+		FileSaver.saveAs(process.env.REACT_APP_CLIENT_URL + '/resources/i.pdf', 'MyCV.pdf')
+		console.log(download)
 	}
+
 	return (
 		<motion.div
 			intial={{ width: 0 }}
