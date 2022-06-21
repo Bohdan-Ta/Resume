@@ -61,7 +61,7 @@ const Button = styled.button`
 
 export default function About() {
 	const download = () => {
-		FileSaver.saveAs(process.env.REACT_APP_CLIENT_URL + '/resources/english-for-it-specialists.pdf', 'MyCV.pdf')
+		FileSaver.saveAs(process.env.REACT_APP_CLIENT_URL + 'public/resources/i.pdf', 'MyCV.pdf')
 	}
 	return (
 		<motion.div
