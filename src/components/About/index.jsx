@@ -61,7 +61,7 @@ const Button = styled.button`
 
 export default function About() {
 	const download = () => {
-		FileSaver.saveAs(process.env.i + '/resources/i.pdf', 'MyCV.pdf')
+		FileSaver.saveAs(`https://cv-tb.netlify.app/public/resources/i.pdf`, 'MyCV.pdf')
 	}
 
 	return (
