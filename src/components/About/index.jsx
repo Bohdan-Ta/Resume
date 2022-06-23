@@ -1,7 +1,3 @@
-// import { NavLink, Route, Outlet } from 'react-router-dom'
-// import { Suspense } from 'react'
-
-// import { Loader } from '../../components/Loader'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import FileSaver from 'file-saver'
@@ -61,7 +57,7 @@ const Button = styled.button`
 
 export default function About() {
 	const download = () => {
-		FileSaver.saveAs(`https://cv-tb.netlify.app/public/resources/i.pdf`, 'MyCV.pdf')
+		FileSaver.saveAs('../../../public/resources/i.pdf', 'My.pdf')
 	}
 
 	return (
