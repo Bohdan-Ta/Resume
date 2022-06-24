@@ -1,3 +1,7 @@
+// import { NavLink, Route, Outlet } from 'react-router-dom'
+// import { Suspense } from 'react'
+
+// import { Loader } from '../../components/Loader'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import FileSaver from 'file-saver'
@@ -57,7 +61,7 @@ const Button = styled.button`
 
 export default function About() {
 	const download = () => {
-		FileSaver.saveAs('../../../public/resources/i.pdf', 'My.pdf')
+		FileSaver.saveAs(process.env.I + /resources/i.pdf, 'MyCV.pdf')
 	}
 
 	return (
