@@ -47,7 +47,7 @@ const Skill = styled.div`
 	div {
 		position: absolute;
 		top: 80px;
-		right: calc(50% - 80px);
+		right: calc(50% - 79px);
 		width: 150px;
 		height: 150px;
 		display: flex;
