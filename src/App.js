@@ -19,7 +19,7 @@ export const App = () => {
 
 	return (
 		<Fragment>
-			{!isReadyToRender && <Preloade />}
+			{!isReadyToRender && <Preloader />}
 			<Section>
 				<AppBar />
 				<Suspense fallback={<Loader />}>
