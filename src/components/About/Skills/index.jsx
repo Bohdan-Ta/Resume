@@ -10,7 +10,7 @@ const Section = styled.div`
 		color: #fff;
 		text-transform: capitalize;
 		font-weight: 300;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 	}
 `
 const Container = styled.div`
@@ -23,20 +23,6 @@ const Container = styled.div`
 `
 const Skill = styled.div`
 	position: relative;
-
-	img {
-		display: block;
-		margin: 30px;
-		height: 200px;
-	}
-
-	h2 {
-		font-size: 30px;
-		font-weight: 300;
-		text-align: center;
-		text-transform: capitalize;
-		margin: 30px 0 20px;
-	}
 	p {
 		text-align: center;
 		opacity: 0.5;
@@ -45,9 +31,10 @@ const Skill = styled.div`
 	}
 
 	div {
-		position: absolute;
+		margin: 0 auto;
+		/* position: absolute;
 		top: 80px;
-		right: calc(50% - 79px);
+		right: calc(50% - 80px); */
 		width: 150px;
 		height: 150px;
 		display: flex;
@@ -108,17 +95,14 @@ export const Skills = () => {
 			<h1>skills</h1>
 			<Container>
 				<Skill>
-					<img src='#' alt='' />
 					<div>HTML</div>
 					<p>Confidence in possession. Using semantics when designing sites.</p>
 				</Skill>
 				<Skill>
-					<img src='#' alt='' />
 					<div>CSS</div>
 					<p>Confident possession. When creating sites I use both css and sass, styled-component, inline Styles</p>
 				</Skill>
 				<Skill>
-					<img src='#' alt='' />
 					<div>JS</div>
 					<p>
 						I have knowledge of JS at a level that allows you to build sites with interactive elements. Use asynchronous
@@ -127,12 +111,10 @@ export const Skills = () => {
 					</p>
 				</Skill>
 				<Skill>
-					<img src='#' alt='' />
 					<div>NODE.JS</div>
 					<p>I have the knowledge to use Node.js to create back-end sites and applications</p>
 				</Skill>
 				<Skill>
-					<img src='#' alt='' />
 					<div>REACT</div>
 					<p>
 						React is what allows me to create what the customer wants or wants. Using React with all libraries and
@@ -141,7 +123,6 @@ export const Skills = () => {
 					</p>
 				</Skill>
 				<Skill>
-					<img src='#' alt='' />
 					<div>GIT</div>
 					<p>
 						Git is something incredible that allows the whole team to work on a project at once. Experience of team work
