@@ -1,18 +1,13 @@
-// import { NavLink, Route, Outlet } from 'react-router-dom'
-// import { Suspense } from 'react'
-
-// import { Loader } from '../../components/Loader'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import FileSaver from 'file-saver'
 
 import { Skills } from './Skills'
 import { Education } from './Education/Education'
 
 import my_photo from '../../images/photo_my.jpg'
+import My_CV from '../../helpers/i.pdf'
 
 const AboutDiv = styled.div`
-	/* width: 100%; */
 	padding: 150px 100px 0;
 	position: relative;
 	top: 0;
@@ -57,12 +52,17 @@ const Button = styled.button`
 	&:hover {
 		background: #000;
 	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
 `
 
 export default function About() {
-	const download = () => {
-		FileSaver.saveAs(process.env.I + /resources/i.pdf, 'MyCV.pdf')
-	}
+	// const download = () => {
+	// 	FileSaver.saveAs(process.env.I + /resources/i.pdf, 'MyCV.pdf')
+	// }
 
 	return (
 		<motion.div
@@ -73,8 +73,10 @@ export default function About() {
 			<AboutDiv>
 				<AboutWrap>
 					<img src={my_photo} alt='man' />
-					<Button type='button' onClick={download}>
-						downlaod cv
+					<Button type='button'>
+						<a href={My_CV} download='My_File.pdf'>
+							downlaod cv
+						</a>
 					</Button>
 				</AboutWrap>
 				<p>
