@@ -13,7 +13,7 @@ const Section = lazy(() => import('./components/Section'))
 
 export const App = () => {
 	const [isReadyToRender, setIsReadyToRender] = useState(false)
-	document.onload = function () {
+	window.onload = function () {
 		setIsReadyToRender(true)
 	}
 
