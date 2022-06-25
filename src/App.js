@@ -1,10 +1,10 @@
-import React, { Fragment, Suspense, lazy, useState } from 'react'
+import React, { Fragment, Suspense, lazy } from 'react'
 
 import { ToastContainer } from 'react-toastify'
 
 import AnimatedRoutes from './components/AnimatedRoutes'
 import { Loader } from './components/Loader'
-import { Preloader } from './components/Preloader'
+// import { Preloader } from './components/Preloader'
 
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -12,14 +12,14 @@ const AppBar = lazy(() => import('./components/AppBar'))
 const Section = lazy(() => import('./components/Section'))
 
 export const App = () => {
-	const [isReadyToRender, setIsReadyToRender] = useState(false)
+	// const [isReadyToRender, setIsReadyToRender] = useState(false)
 	window.onload = function () {
-		setIsReadyToRender(true)
+		// setIsReadyToRender(true)
 	}
 
 	return (
 		<Fragment>
-			{!isReadyToRender && <Preloader />}
+			{/* {!isReadyToRender && <Preloader />} */}
 			<Section>
 				<AppBar />
 				<Suspense fallback={<Loader />}>
