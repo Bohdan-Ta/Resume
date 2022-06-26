@@ -120,7 +120,7 @@ export default function Contact() {
 		<motion.div
 			intial={{ width: 0 }}
 			animate={{ width: '100%' }}
-			exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
 		>
 			<FormStyled>
 				<Formik
@@ -161,9 +161,6 @@ export default function Contact() {
 					<a href='https://www.linkedin.com/in/bohdan-tatarchuk-4961907a/' target='_blank' rel='noreferrer'>
 						<BsLinkedin />
 					</a>
-					{/* <a href='https://ru-ru.facebook.com/lifehacker.ru/' target='_blank' rel='noreferrer'>
-						<BsFacebook />
-					</a> */}
 				</StyleIcon>
 				<Map>
 					<Iframe

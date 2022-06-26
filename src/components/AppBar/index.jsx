@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 import styled from 'styled-components'
+import Weather from '../Weather'
 
 const Header = styled.div`
 	width: 100%;
@@ -49,6 +50,7 @@ const Header = styled.div`
 export default function AppBar() {
 	return (
 		<Header>
+			<Weather />
 			<NavLink
 				to='/'
 				style={({ isActive }) => ({

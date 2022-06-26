@@ -60,15 +60,11 @@ const Button = styled.button`
 `
 
 export default function About() {
-	// const download = () => {
-	// 	FileSaver.saveAs(process.env.I + /resources/i.pdf, 'MyCV.pdf')
-	// }
-
 	return (
 		<motion.div
 			intial={{ width: 0 }}
 			animate={{ width: '100%' }}
-			exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+			exit={{ y: window.innerWidth, transition: { duration: 0.2 } }}
 		>
 			<AboutDiv>
 				<AboutWrap>
