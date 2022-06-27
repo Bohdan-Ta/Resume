@@ -1,3 +1,4 @@
+// import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
 
@@ -22,10 +23,12 @@ export default function Weather() {
 				'https://api.openweathermap.org/data/2.5/weather?lat=50.463807&lon=30.569740&APPID=e4bdf24f044b57ecdb9bbc9845a5e899'
 			)
 			console.log(data)
+			return data
 		} catch (error) {
 			console.error(error)
 		}
 	}
-	const data = getWeather()
-	return <Wethers>{data.temp}</Wethers>
+	const { wind } = getWeather()
+	console.log(wind)
+	return <Wethers>{wind}</Wethers>
 }
