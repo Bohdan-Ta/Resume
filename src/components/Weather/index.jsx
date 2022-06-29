@@ -4,15 +4,19 @@ import getWeather from '../../services/getWeather'
 
 const Wethers = styled.div`
 	position: absolute;
-	top: 110px;
-	left: 0;
-	width: 50px;
-	height: 50px;
-	font-size: 20px;
-	color: red;
+	top: 0;
+	right: 20px;
+	display: flex;
+	align-items: center;
+	height: 100%;
 
 	p {
+		margin: 0 5px;
+		font-size: 14px;
+		text-transform: capitalize;
+
 		color: #fff;
+		opacity: 0.5;
 	}
 `
 
@@ -29,6 +33,12 @@ export default function Weather() {
 		getTemp()
 	}, [])
 
-	const { name } = weather
-	return <Wethers>{name}</Wethers>
+	return typeof weather.main != 'undefined' ? (
+		<Wethers>
+			<p>{weather.name}</p>
+			<p>{(weather.main.temp - 273).toFixed(1)}&deg;C</p>
+		</Wethers>
+	) : (
+		<div></div>
+	)
 }
