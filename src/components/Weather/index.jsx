@@ -12,7 +12,7 @@ const Wethers = styled.div`
 
 	p {
 		margin: 0 5px;
-		font-size: 14px;
+		font-size: 16px;
 		text-transform: capitalize;
 
 		color: #fff;
@@ -36,7 +36,7 @@ export default function Weather() {
 	return typeof weather.main != 'undefined' ? (
 		<Wethers>
 			<p>{weather.name}</p>
-			<p>{(weather.main.temp - 273).toFixed(1)}&deg;C</p>
+			<p>{weather.main.temp.toFixed(1)}&deg;C</p>
 		</Wethers>
 	) : (
 		<div></div>
