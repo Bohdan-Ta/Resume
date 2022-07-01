@@ -13,7 +13,7 @@ const Wethers = styled.div`
 	p {
 		margin: 0 5px;
 		font-size: 16px;
-		text-transform: capitalize;
+		/* text-transform: capitalize; */
 
 		color: #fff;
 		opacity: 0.5;
@@ -21,22 +21,21 @@ const Wethers = styled.div`
 `
 
 export default function Weather() {
-	const [weather, setWeather] = useState([])
-
+	const [weatherDate, setWeatherDate] = useState([])
 	useEffect(() => {
 		const getTemp = async () => {
 			const result = await getWeather()
 			console.log(result)
-			setWeather(result)
+			setWeatherDate(result)
 		}
-
 		getTemp()
 	}, [])
 
-	return typeof weather.main != 'undefined' ? (
+	return typeof weatherDate.main != 'undefined' ? (
 		<Wethers>
-			<p>{weather.name}</p>
-			<p>{weather.main.temp.toFixed(1)}&deg;C</p>
+			<p>{weatherDate.name}</p>
+			<p>temp: {weatherDate.main.temp.toFixed(1)}&deg;C</p>
+			<p>wind: {weatherDate.wind.speed}m/s</p>
 		</Wethers>
 	) : (
 		<div></div>
