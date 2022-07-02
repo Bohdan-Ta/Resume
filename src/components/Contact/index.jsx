@@ -5,6 +5,7 @@ import { toast } from 'react-toastify'
 import styled from 'styled-components'
 
 import { BsTelegram, BsLinkedin } from 'react-icons/bs' // BsFacebook
+import { GiPhone } from 'react-icons/gi' // BsFacebook
 
 import { motion } from 'framer-motion'
 
@@ -155,6 +156,9 @@ export default function Contact() {
 					</FormWrap>
 				</Formik>
 				<StyleIcon>
+					<a href='tel:+380503869202'>
+						<GiPhone />
+					</a>
 					<a href='https://t.me/@tbukraine' target='_blank' rel='noreferrer'>
 						<BsTelegram />
 					</a>
