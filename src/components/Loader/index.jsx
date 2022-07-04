@@ -13,7 +13,7 @@ export const Loader = () => {
 	return (
 		<Override>
 			<div>
-				<BeatLoader size={20} color='red' />
+				<BeatLoader size={15} color='red' />
 			</div>
 		</Override>
 	)
