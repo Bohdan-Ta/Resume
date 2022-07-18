@@ -70,7 +70,7 @@ export default function About() {
 				<AboutWrap>
 					<img src={my_photo} alt='man' />
 					<Button type='button'>
-						<a href={My_CV} download='My_File.pdf'>
+						<a href={My_CV} download='CV_Bohdan.pdf'>
 							downlaod cv
 						</a>
 					</Button>
