@@ -25,7 +25,7 @@ export default function Weather() {
 	useEffect(() => {
 		const getTemp = async () => {
 			const result = await getWeather()
-			console.log(result)
+			// console.log(result)
 			setWeatherDate(result)
 		}
 		getTemp()

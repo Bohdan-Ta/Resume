@@ -48,9 +48,10 @@ const Header = styled.div`
 `
 
 export default function AppBar() {
+	const screenWidth = window.screen.width === 1024
 	return (
 		<Header>
-			<Weather />
+			{screenWidth ? <Weather /> : null}
 			<NavLink
 				to='/'
 				style={({ isActive }) => ({
