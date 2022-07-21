@@ -4,8 +4,8 @@ import * as Yup from 'yup'
 import { toast } from 'react-toastify'
 import styled from 'styled-components'
 
-import { BsTelegram, BsLinkedin } from 'react-icons/bs' // BsFacebook
-import { GiPhone } from 'react-icons/gi' // BsFacebook
+import { BsTelegram, BsLinkedin } from 'react-icons/bs'
+import { GiPhone } from 'react-icons/gi'
 
 import { motion } from 'framer-motion'
 
