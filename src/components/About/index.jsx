@@ -83,7 +83,7 @@ export default function About() {
 					and other frameworks that allow you to create sites and other software products. I have been working on
 					learning English for the last 2 years. I read and implement modern developments in IT, in particular I use
 					foreign youtube channels, electronic media resources in particular Medium in the direction of JS, React,
-					Node.JS, Git etc.
+					Node.JS, Git etcetrua.
 				</p>
 			</AboutDiv>
 			<Skills />
