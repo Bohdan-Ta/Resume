@@ -151,7 +151,7 @@ export default function Project() {
 								</BtnGit>
 								<BtnLive
 									type='button'
-									onClick={() => window.open('  https://a-v-kuzmich.github.io/filmoteka/ ', '_blank')}
+									onClick={() => window.open('https://a-v-kuzmich.github.io/filmoteka/ ', '_blank')}
 								>
 									see live
 								</BtnLive>
@@ -164,7 +164,7 @@ export default function Project() {
 							<h2>Phonebook</h2>
 							<p>
 								Phonebook that allows you to save contacts and sort them alphabetically. React, Route, Redax, Formik,
-								Netlyfi and other technologies are used
+								Netlify and other technologies are used
 							</p>
 							<ButtonGroup>
 								<BtnGit
