@@ -32,7 +32,7 @@ export const Education = () => {
 				<div className={s.cardBody}>
 					<h2 className={s.title}>2021-2022</h2>
 					<p class='card-detail'>
-						Study HTML, CSS, JS, React, Node.js in GoIT. Received a full stack developer certificate. .
+						Study HTML, CSS, JS, React, Node.js and etc in GoIT. Received a full stack developer certificate.
 					</p>
 				</div>
 			</div>

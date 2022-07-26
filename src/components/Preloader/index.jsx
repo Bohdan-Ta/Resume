@@ -4,13 +4,6 @@ export const Preloader = () => {
 	return (
 		<Loading>
 			<After>
-				<span>B</span>
-				<span>O</span>
-				<span>H</span>
-				<span>D</span>
-				<span>A</span>
-				<span>N</span>
-				<span>-</span>
 				<span>R</span>
 				<span>E</span>
 				<span>S</span>

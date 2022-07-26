@@ -1,4 +1,5 @@
 import { BeatLoader } from 'react-spinners'
+
 import styled from 'styled-components'
 
 const Override = styled.div`
@@ -13,7 +14,7 @@ export const Loader = () => {
 	return (
 		<Override>
 			<div>
-				<BeatLoader size={15} color='red' />
+				<BeatLoader size={14} color='red' />
 			</div>
 		</Override>
 	)

@@ -133,7 +133,6 @@ export default function Contact() {
 					onSubmit={(values, { setSubmitting, resetForm }) => {
 						setTimeout(() => {
 							sendEmail(values)
-							// alert(JSON.stringify(values, null, 2))
 							setSubmitting(false)
 							resetForm()
 						}, 400)
