@@ -73,20 +73,22 @@ const Content = styled.div`
 const ButtonGroup = styled.div`
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 20px 5px;
+	gap: 10px 5px;
 `
 
 const BtnGit = styled.button`
 	height: 40px;
 	text-transform: capitalize;
 	font-size: 18px;
-	border: none;
+	border: 2px solid #000;
+	border-radius: 5px;
 	background: #000;
 	color: #fff;
 	cursor: pointer;
 	&:hover {
 		background: #fff;
 		color: #000;
+		border-color: #fff;
 	}
 `
 const BtnLive = styled.button`
@@ -96,6 +98,7 @@ const BtnLive = styled.button`
 	border: none;
 	background: none;
 	border: 2px solid #fff;
+	border-radius: 5px;
 	color: #fff;
 	cursor: pointer;
 	&:hover {

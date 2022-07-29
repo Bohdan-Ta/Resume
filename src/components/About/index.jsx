@@ -71,7 +71,7 @@ export default function About() {
 					<img src={my_photo} alt='man' />
 					<Button type='button'>
 						<a href={My_CV} download='CV_Bohdan.pdf'>
-							downlaod cv
+							downlaod cV
 						</a>
 					</Button>
 				</AboutWrap>
