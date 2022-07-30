@@ -96,38 +96,38 @@ export const Skills = () => {
 			<Container>
 				<Skill>
 					<div>HTML</div>
-					<p>Confidence in possession. Using semantics when designing sites.</p>
+					<p>Confident user, I can use semantics while designing sites.</p>
 				</Skill>
 				<Skill>
 					<div>CSS</div>
-					<p>Confident possession. When creating sites I use both css and sass, styled-component, inline Styles</p>
+					<p>Confident user. While creating sites I use both css and sass, styled-component, inline Styles</p>
 				</Skill>
 				<Skill>
 					<div>JS</div>
 					<p>
-						I have knowledge of JS at a level that allows you to build sites with interactive elements. Use asynchronous
-						queries. When writing code, you can use classes, hooks, classic or arrow functions, and other JS
+						I have knowledge of JS at a level that allows me to build sites with interactive elements. I can use
+						asynchronous queries. While writing code, I use classes, hooks, classic or arrow functions, and other JS
 						capabilities.
 					</p>
 				</Skill>
 				<Skill>
 					<div>NODE.JS</div>
-					<p>I have the knowledge to use Node.js to create back-end sites and applications</p>
+					<p>I have knowledge of using Node.js to create back-end sites and applications.</p>
 				</Skill>
 				<Skill>
 					<div>REACT</div>
 					<p>
-						React is what allows me to create what the customer wants or wants. Using React with all libraries and
-						frameworks you can create an amazing product. When writing code, I use both classes and hooks. Redux is a
-						great way to monitor the status of the application.
+						React is what allows me to create what the customer wants. Using React with all libraries and frameworks I
+						can create an amazing product. While writing a code, I use both classes and hooks. Redux is a great way to
+						monitor the status of the application.
 					</p>
 				</Skill>
 				<Skill>
 					<div>GIT</div>
 					<p>
-						Git is something incredible that allows the whole team to work on a project at once. Experience of team work
-						on the project, the ability to create projects, configure the project for team work, resolve conflicts in
-						the implementation of commits
+						Git is something incredible that allows the whole team to work on a project at once. It gives experience of
+						team work on the project, the ability to create projects, configure the project for team work, resolve
+						conflicts in the implementation of commits.
 					</p>
 				</Skill>
 			</Container>

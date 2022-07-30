@@ -167,7 +167,7 @@ export default function Project() {
 							<h2>Phonebook</h2>
 							<p>
 								Phonebook that allows you to save contacts and sort them alphabetically. React, Route, Redax, Formik,
-								Netlify and other technologies are used
+								Netlify and other technologies.
 							</p>
 							<ButtonGroup>
 								<BtnGit

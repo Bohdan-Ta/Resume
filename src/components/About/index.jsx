@@ -76,14 +76,14 @@ export default function About() {
 					</Button>
 				</AboutWrap>
 				<p>
-					PROACTIVE - HIGH ORGANIZATION - ATTENTIVENESS <br></br> I have experience in team management, I know how to
-					work in a team to achieve results. I am constantly striving to gain additional knowledge and improve my skills
-					both in management experience and in the field of IT. Gained experience in three team projects while training
-					Full Stack Developer at GoIT, which lasted from 2021-2022. Gained knowledge of HTML, CSS, React, JS, Node.js
-					and other frameworks that allow you to create sites and other software products. I have been working on
-					learning English for the last 2 years. I read and implement modern developments in IT, in particular I use
-					foreign youtube channels, electronic media resources in particular Medium in the direction of JS, React,
-					Node.JS, Git etcetrua.
+					PROACTIVE - HIGH ORGANIZATION - ATTENTIVE TO DETAILS <br></br> I have experience in team management, I know
+					how to work in a team to achieve results. I constantly strive to gain additional knowledge and improve my
+					skills both in management experience and in the field of IT. I gained experience in three team projects while
+					training Full Stack Developer at GoIT, which lasted from 2021 till 2022. Additionally, I have got knowledge of
+					HTML, CSS, React, JS, Node.js and other frameworks that allows me to create sites and other software products.
+					I have been learning English for the last 2 years. I read and implement modern developments in IT, in
+					particular I use foreign youtube channels, electronic media resources in particular Medium in the direction of
+					JS, React, Node.JS, Git etcetrua.
 				</p>
 			</AboutDiv>
 			<Skills />

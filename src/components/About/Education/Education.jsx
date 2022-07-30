@@ -8,8 +8,8 @@ export const Education = () => {
 				<div className={s.cardBody}>
 					<h2 className={s.title}>2000-2006</h2>
 					<p class='card-detail'>
-						Studying at universities, which gave the opportunity to gain knowledge in the fields of economics,
-						management, law .
+						Studying at universities, that gave the opportunity to gain knowledge in the fields of economics, management
+						and law.
 					</p>
 				</div>
 			</div>
@@ -17,7 +17,7 @@ export const Education = () => {
 				<div className={s.cardBody}>
 					<h2 className={s.title}>2004-2016</h2>
 					<p class='card-detail'>
-						Work in various positions in the Central authorities (Ministry). Leadership positions while working at
+						Work in various positions in the central authorities (Ministry). Leadership positions while working at
 						state-owned enterprises. Experience in managing both small and large teams.
 					</p>
 				</div>
@@ -40,8 +40,8 @@ export const Education = () => {
 				<div className={s.cardBody}>
 					<h2 className={s.title}>2020-2022</h2>
 					<p class='card-detail'>
-						Learning English with the help of tutors and mobile applications that allow you to constantly improve
-						language learning.
+						Learning English with the help of tutors and mobile applications allows me constantly to improve language
+						learning.
 					</p>
 				</div>
 			</div>
