@@ -13,9 +13,9 @@ const Section = lazy(() => import('./components/Section'))
 
 export const App = () => {
 	// const [isReadyToRender, setIsReadyToRender] = useState(false)
-	window.onload = function () {
-		// setIsReadyToRender(true)
-	}
+	// window.onload = function () {
+	// 	setIsReadyToRender(true)
+	// }
 
 	return (
 		<Fragment>
