@@ -106,23 +106,16 @@ export default function Contact() {
 		const success = () => toast.success('Information sent successfully')
 		const errors = () => toast.error('Something went wrong')
 
-		emailjs
-			.send(
-				process.env.REACT_APP_SERVICE_EMAIL_JS,
-				process.env.REACT_APP_TEMPLATE_EMAIL_JS,
-				object,
-				process.env.REACT_APP_PUBLIC_KEY_EMAIL_JS
-			)
-			.then(
-				(result) => {
-					success()
-					console.log(result.text)
-				},
-				(error) => {
-					errors()
-					console.log(error.text)
-				}
-			)
+		emailjs.send('service_qp0brcc', 'template_hr6h8b8', object, '1moAFjH5T5FKh5xhk').then(
+			(result) => {
+				success()
+				console.log(result.text)
+			},
+			(error) => {
+				errors()
+				console.log(error.text)
+			}
+		)
 	}
 	return (
 		<motion.div
