@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
+import { Gallery } from './SkillCarousel'
 import { Skills } from './Skills'
 import { Education } from './Education/Education'
 
@@ -87,6 +88,7 @@ export default function About() {
 				</p>
 			</AboutDiv>
 			<Skills />
+			<Gallery />
 			<Education />
 		</motion.div>
 	)
