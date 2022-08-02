@@ -121,7 +121,7 @@ export default function Contact() {
 		<motion.div
 			intial={{ width: 0 }}
 			animate={{ width: '100%' }}
-			exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
 		>
 			<FormStyled>
 				<Formik
