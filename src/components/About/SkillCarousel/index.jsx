@@ -5,7 +5,7 @@ import 'react-alice-carousel/lib/alice-carousel.css'
 const handleDragStart = (e) => e.preventDefault()
 const responsive = {
 	0: { items: 1 },
-	568: { items: 2 },
+	740: { items: 2 },
 	1024: { items: 4 },
 }
 
@@ -32,19 +32,6 @@ const items = [
 			width='100'
 			height='100'
 		/>
-	</a>,
-	<a href='https://babeljs.io/' target='_blank' rel='noreferrer' onDragStart={handleDragStart} role='presentation'>
-		<img src='https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg' alt='babel' width='100' height='100' />
-	</a>,
-
-	<a
-		href='https://www.gnu.org/software/bash/'
-		target='_blank'
-		rel='noreferrer'
-		onDragStart={handleDragStart}
-		role='presentation'
-	>
-		<img src='https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg' alt='bash' width='100' height='100' />
 	</a>,
 
 	<a href='https://getbootstrap.com' target='_blank' rel='noreferrer' onDragStart={handleDragStart} role='presentation'>
@@ -143,7 +130,7 @@ export const Gallery = () => {
 			responsive={responsive}
 			controlsStrategy='default'
 			infinite='true'
-			paddingLeft='150'
+			paddingLeft='200'
 		/>
 	)
 }
