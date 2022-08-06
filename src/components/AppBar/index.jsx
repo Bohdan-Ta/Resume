@@ -51,7 +51,7 @@ export default function AppBar() {
 	const width = window.innerWidth
 	return (
 		<Header>
-			{width > 1024 ? <Weather /> : null}
+			{width > 768 ? <Weather /> : null}
 			<NavLink
 				to='/'
 				style={({ isActive }) => ({
