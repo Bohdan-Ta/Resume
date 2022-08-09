@@ -84,7 +84,7 @@ export default function About() {
 					HTML, CSS, React, JS, Node.js and other frameworks that allows me to create sites and other software products.
 					I have been learning English for the last 2 years. I read and implement modern developments in IT, in
 					particular I use foreign youtube channels, electronic media resources in particular Medium in the direction of
-					JS, React, Node.JS, Git etcetrua.
+					JS, React, Node.JS, Git etc.
 				</p>
 			</AboutDiv>
 			<Skills />
