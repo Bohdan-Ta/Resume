@@ -22,7 +22,7 @@ const Header = styled.div`
 		padding: 10px;
 		margin: 0 5px;
 		line-height: 60px;
-		transition: 0.5s;
+		transition: 0.6s;
 		font-style: 20px;
 		cursor: pointer;
 
