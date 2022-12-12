@@ -13,14 +13,14 @@ const AboutDiv = styled.div`
 	position: relative;
 	top: 0;
 	opacity: 1;
-	transition: 1s;
+	transition: 1.1s;
 	display: grid;
 	grid-template-columns: 30% 65%;
 	grid-gap: 40px;
 
 	p {
 		color: #fff;
-		opacity: 0.6;
+		opacity: 0.62;
 		font-size: 20px;
 		line-height: 40px;
 	}
