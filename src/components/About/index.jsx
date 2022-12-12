@@ -6,7 +6,7 @@ import { Skills } from './Skills'
 import { Education } from './Education/Education'
 
 import my_photo from '../../images/photo_my.jpg'
-import My_CV from '../../helpers/CV_TATARCHUK_BOHDAN.pdf'
+import My_CV from '../../helpers/CVBT.pdf'
 
 const AboutDiv = styled.div`
 	padding: 150px 100px 0;
