@@ -6,8 +6,8 @@ import { Skills } from './Skills'
 import { Education } from './Education/Education'
 
 import my_photo from '../../images/photo_my.jpg'
-import My_CV from '../../helpers/CVBT.pdf'
-
+/* import My_CV from '../../helpers/CVBT.pdf'
+ */
 const AboutDiv = styled.div`
 	padding: 150px 100px 0;
 	position: relative;
@@ -37,7 +37,7 @@ const AboutWrap = styled.div`
 	}
 `
 
-const Button = styled.button`
+/* const Button = styled.button`
 	position: absolute;
 	bottom: 20px;
 	left: 50%;
@@ -58,7 +58,7 @@ const Button = styled.button`
 		color: #fff;
 		text-decoration: none;
 	}
-`
+` */
 
 export default function About() {
 	return (
