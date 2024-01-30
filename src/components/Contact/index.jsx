@@ -106,7 +106,7 @@ export default function Contact() {
 		const success = () => toast.success('Information sent successfully')
 		const errors = () => toast.error('Something went wrong')
 
-		emailjs.send('service_qp0brcc', 'template_hr6h8b8', object, '1moAFjH5T5FKh5xhk').then(
+		emailjs.send('service_by6qb2o', 'template_hr6h8b8', object, '1moAFjH5T5FKh5xhk').then(
 			(result) => {
 				success()
 				console.log(result.text)
