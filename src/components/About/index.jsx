@@ -70,11 +70,11 @@ export default function About() {
 			<AboutDiv>
 				<AboutWrap>
 					<img src={my_photo} alt='man' />
-					<Button type='button'>
+					{/* <Button type='button'>
 						<a href={My_CV} download='CV_Bohdan.pdf'>
 							downlaod cV
 						</a>
-					</Button>
+					</Button> */}
 				</AboutWrap>
 				<p>
 					PROACTIVE - HIGH ORGANIZATION - ATTENTIVE TO DETAILS <br></br> I have experience in team management, I know

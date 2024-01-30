@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const weather = axios.create({
-	baseURL: 'https://api.openweathermap.org/data/2.5/weather?q=Kiev&units=metric&appid=e4bdf24f044b57ecdb9bbc9845a5e899',
+	baseURL: 'https://api.openweathermap.org/data/2.5/weather?q=Flensburg&units=metric&appid=e4bdf24f044b57ecdb9bbc9845a5e899',
 	timeout: 1000,
 })
 
