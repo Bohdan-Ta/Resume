@@ -166,8 +166,9 @@ export default function Contact() {
 					</a>
 				</StyleIcon>
 				<Map>
+
 					<Iframe
-						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325515.68161572196!2d30.25251015734255!3d50.402136755748614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1643055222962!5m2!1suk!2sua'
+						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73605.37565590296!2d9.349681361175076!3d54.79459100620184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b342bd1a1ab9e9%3A0x5bcf632c834e4467!2sFlensburg!5e0!3m2!1sde!2sde!4v1706606073336!5m2!1sde!2sde'
 						loading='lazy'
 					></Iframe>
 				</Map>
