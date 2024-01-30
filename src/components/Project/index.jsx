@@ -197,12 +197,12 @@ export default function Project() {
 								>
 									github repo
 								</BtnGit>
-								<BtnLive
+								{/* <BtnLive
 									type='button'
 									onClick={() => window.open('  https://wallet-web-goit.herokuapp.com/ ', '_blank')}
 								>
 									see live
-								</BtnLive>
+								</BtnLive> */}
 							</ButtonGroup>
 						</Content>
 					</Card>
