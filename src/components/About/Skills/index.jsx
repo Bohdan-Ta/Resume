@@ -47,9 +47,9 @@ const Skill = styled.div`
 
 	&:nth-child(1) {
 		div {
-			background: #ff4f4f28;
-			border-color: #ff4f4f;
-			color: #ff4f4f;
+			background: #ffed4f28;
+			border-color: #ffed4f;
+			color: #ffed4f;
 		}
 	}
 	&:nth-child(2) {
@@ -61,9 +61,10 @@ const Skill = styled.div`
 	}
 	&:nth-child(3) {
 		div {
-			background: #ffed4f28;
-			border-color: #ffed4f;
-			color: #ffed4f;
+		
+			background: #ff4f4f28;
+			border-color: #ff4f4f;
+			color: #ff4f4f;
 		}
 	}
 	&:nth-child(4) {
@@ -95,20 +96,20 @@ export const Skills = () => {
 			<h1>skills</h1>
 			<Container>
 				<Skill>
-					<div>HTML</div>
-					<p>Confident user, I can use semantics while designing sites.</p>
-				</Skill>
-				<Skill>
-					<div>CSS</div>
-					<p>Confident user. While creating sites I use both css and sass, styled-component, inline Styles</p>
-				</Skill>
-				<Skill>
-					<div>JS</div>
+					<div>JavaScript</div>
 					<p>
 						I have knowledge of JS at a level that allows me to build sites with interactive elements. I can use
 						asynchronous queries. While writing code, I use classes, hooks, classic or arrow functions, and other JS
 						capabilities.
 					</p>
+				</Skill>
+				<Skill>
+					<div>KOTLIN</div>
+					<p>I have Kotlin skills at a level that allows me to develop applications with interactive elements. I can work with asynchronous queries using coroutines. When writing code, I use classes, arrow functions, and other Kotlin capabilities.</p>
+				</Skill>
+				<Skill>
+					<div>GATSBY</div>
+					<p>I can leverage asynchronous queries effectively within the Gatsby framework. My skills include working with React components, GraphQL for data querying, and utilizing various Gatsby plugins to enhance website functionality.</p>
 				</Skill>
 				<Skill>
 					<div>NODE.JS</div>

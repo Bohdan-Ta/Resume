@@ -15,7 +15,7 @@ const AboutDiv = styled.div`
 	opacity: 1;
 	transition: 1.1s;
 	display: grid;
-	grid-template-columns: 30% 65%;
+	grid-template-columns: 40% 60%;
 	grid-gap: 40px;
 
 	p {
@@ -77,14 +77,13 @@ export default function About() {
 					</Button> */}
 				</AboutWrap>
 				<p>
-					PROACTIVE - HIGH ORGANIZATION - ATTENTIVE TO DETAILS <br></br> I have experience in team management, I know
-					how to work in a team to achieve results. I constantly strive to gain additional knowledge and improve my
-					skills both in management experience and in the field of IT. I gained experience in three team projects while
-					training Full Stack Developer at GoIT, which lasted from 2021 till 2022. Additionally, I have got knowledge of
-					HTML, CSS, React, JS, Node.js and other frameworks that allows me to create sites and other software products.
-					I have been learning English for the last 2 years. I read and implement modern developments in IT, in
-					particular I use foreign youtube channels, electronic media resources in particular Medium in the direction of
-					JS, React, Node.JS, Git etc.
+					PROACTIVE - HIGH ORGANIZATION - ATTENTIVE TO DETAILS <br></br> I possess extensive experience in team management, adept at collaborating within teams to achieve exceptional results. Continuously striving for self-improvement, I actively seek out additional knowledge and skill enhancement, both in management practices and within the IT realm.
+					<br></br>
+					During my training as a Full Stack Developer at GoIT from 2021 to 2022, I actively participated in three team projects, honing my collaborative skills and gaining practical experience in project management.
+					<br></br>
+					In addition to my proficiency in HTML, CSS, React, JS, and Node.js, I also excel in Kotlin and utilize IntelliJ IDEA and Android Studio for Android development projects. My dedication to language learning extends beyond English, as I have been actively studying German for the past two years.
+					<br></br>
+					To stay current with the latest developments in IT, I regularly engage with modern resources such as foreign YouTube channels and online platforms like Medium, focusing on topics related to JS, React, Node.js, Git, and more. This proactive approach ensures that I remain at the forefront of technological advancements, enabling me to deliver innovative solutions effectively.
 				</p>
 			</AboutDiv>
 			<Skills />
